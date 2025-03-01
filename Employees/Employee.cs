@@ -34,7 +34,7 @@ namespace Employees
             //Console.WriteLine($"ID: {Id}");
             Console.WriteLine($"Pay: {Pay}");
             Console.WriteLine($"Age: {Age}");
-            Console.WriteLine($"SSN: {_empSSN}");
+            Console.WriteLine($"SSN: {EmpSsn}");
         }
     }
 }

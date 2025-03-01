@@ -14,5 +14,10 @@ namespace Employees
         {
             StockOptions = numbOfOpts;
         }
+
+        public Manager()
+        {
+            
+        }
     }
 }
