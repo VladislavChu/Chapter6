@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicInheritance", "BasicIn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employees", "Employees\Employees.csproj", "{BB9DD018-BF6A-4BEE-BF0C-74F73C5C6EC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordInheritance", "RecordInheritance\RecordInheritance.csproj", "{026FCDE0-91ED-4B9A-BFF4-8263DC435314}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BB9DD018-BF6A-4BEE-BF0C-74F73C5C6EC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB9DD018-BF6A-4BEE-BF0C-74F73C5C6EC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB9DD018-BF6A-4BEE-BF0C-74F73C5C6EC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{026FCDE0-91ED-4B9A-BFF4-8263DC435314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{026FCDE0-91ED-4B9A-BFF4-8263DC435314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{026FCDE0-91ED-4B9A-BFF4-8263DC435314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{026FCDE0-91ED-4B9A-BFF4-8263DC435314}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
