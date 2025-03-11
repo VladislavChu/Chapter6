@@ -6,6 +6,30 @@ namespace Employees
     partial class Employee
     {
 
+        protected BenefitPackage EmpBenefits = new BenefitPackage();
+
+        public double GetBenefitCost() => EmpBenefits.ComputePayDeduction();
+
+        public BenefitPackage Benefits
+        {
+            get { return EmpBenefits; }
+            set { EmpBenefits = value; }
+        }
+
+        public class BenefitPackage
+        {
+            public enum BenefitPackageLevel
+            {
+                Standard, Gold, Platinum
+            }
+            public double ComputePayDeduction()
+            {
+                return 125.0;
+            }
+
+
+        }
+
         //methods
         public Employee(string name, int age, int id, float pay, string empSsn, EmployeePayTypeEnum payType)
         {
