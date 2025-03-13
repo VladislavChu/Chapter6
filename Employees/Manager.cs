@@ -19,5 +19,21 @@ namespace Employees
         {
             
         }
+
+        //Override method
+
+        public override void GiveBonus(float amount)
+        {
+            base.GiveBonus(amount);
+            Random r = new Random();
+            StockOptions += r.Next(500);
+        }
+
+        public override void DisplayStatus()
+        {
+            base.DisplayStatus();
+            //вывод кол-ва фондовых опционов
+            Console.WriteLine($"Number of Stock Options: {StockOptions}");
+        }
     }
 }

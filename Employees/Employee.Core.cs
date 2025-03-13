@@ -44,8 +44,7 @@ namespace Employees
         }
         public int Id
         {
-            //get { return _empId; }
-            //record only!
+            get { return EmpId; }
             set { EmpId = value; }
         }
         public float Pay

@@ -40,8 +40,11 @@ namespace Employees
             SocialSecurityNumber = empSsn;
             PayType = payType;
         }
-        public void GiveBonus(float amount)
+        public virtual void GiveBonus(float amount)
         {
+            Pay += amount;
+            
+            /*
             Pay = this switch
             {
                 { PayType: EmployeePayTypeEnum.Commmission } => Pay += .10F * amount,
@@ -49,13 +52,14 @@ namespace Employees
                 { PayType: EmployeePayTypeEnum.Salaried } => Pay += amount,
                 _ => Pay += 0
             };
+            */
             
         }
             
-        public void DisplayStatus()
+        public virtual void DisplayStatus()
         {
             Console.WriteLine($"Name: {Name}");
-            //Console.WriteLine($"ID: {Id}");
+            Console.WriteLine($"ID: {Id}");
             Console.WriteLine($"Pay: {Pay}");
             Console.WriteLine($"Age: {Age}");
             Console.WriteLine($"SSN: {EmpSsn}");
