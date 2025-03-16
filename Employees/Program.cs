@@ -21,6 +21,9 @@ fran.GiveBonus(200);
 fran.DisplayStatus();
 Console.ReadLine();
 
+Employee emp = new Employee();
+Console.WriteLine(emp);
+
 
     
 

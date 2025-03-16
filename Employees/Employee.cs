@@ -3,7 +3,7 @@ using System.Xml.Linq;
 
 namespace Employees
 {
-    partial class Employee
+    abstract partial class Employee
     {
 
         protected BenefitPackage EmpBenefits = new BenefitPackage();

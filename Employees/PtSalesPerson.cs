@@ -13,4 +13,7 @@ namespace Employees
             
         }
     }
+
+    //нельзя переопределять запечатанные методы
+    //public ovveride void GiveBonus(float amount)
 }
