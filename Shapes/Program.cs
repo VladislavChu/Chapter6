@@ -15,3 +15,10 @@ foreach (Shape s in myShapes)
     s.Draw();
 }
 Console.ReadLine();
+
+
+ThreeDCircle o = new ThreeDCircle();
+o.Draw();
+
+((Circle)o).Draw();
+Console.ReadLine();

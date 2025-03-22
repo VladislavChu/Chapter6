@@ -40,6 +40,8 @@ namespace Employees
             SocialSecurityNumber = empSsn;
             PayType = payType;
         }
+
+
         public virtual void GiveBonus(float amount)
         {
             Pay += amount;
