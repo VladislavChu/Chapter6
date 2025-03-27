@@ -47,6 +47,20 @@ static void GivePromotion(Employee emp)
 {
     Console.WriteLine($"{emp.Name} was promoted!");
 
+    switch (emp)
+    {
+        case SalesPerson s when s.SalesNumber > 5:
+            Console.WriteLine($"{emp.Name} made {s.SalesNumber} sale(s)!");
+            break;
+        case Manager m:
+            Console.WriteLine($"{emp.Name} had {m.StockOptions} stock options...");
+            break;
+        case Employee _:
+            Console.WriteLine($"Unable to promote {emp.Name}. Wrong employee type.");
+            break;
+    }
+    Console.WriteLine();
+    /*
     if (emp is SalesPerson s)
     {
         Console.WriteLine($"{s.Name} made {s.SalesNumber} sale(s)!");
@@ -62,6 +76,7 @@ static void GivePromotion(Employee emp)
         Console.WriteLine($"Unable to promote {emp.Name}. Wrong employee type");
         Console.WriteLine();
     }
+    */
 }
 
 object frank = new Manager();
