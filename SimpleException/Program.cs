@@ -25,6 +25,11 @@ catch (Exception e)
     Console.WriteLine($"Source: {e.Source}");
     Console.WriteLine($"Stack: {e.StackTrace}");
     Console.WriteLine($"Help Link: {e.HelpLink}");
+    Console.WriteLine("\n-> Custom Data:");
+    foreach (DictionaryEntry de in e.Data)
+    {
+        Console.WriteLine($"-> {de.Key} : {de.Value}");
+    }
 }
 
 Console.WriteLine("\n***** Out of exception logic *****");

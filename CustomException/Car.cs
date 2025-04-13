@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleException
+namespace CustomException
 {
     class Car
     {
@@ -47,9 +47,10 @@ namespace SimpleException
                     Console.WriteLine($"{PetName} has overheated!");
                     CurrentSpeed = 0;
                     _carIsDead = true;
-                    throw new Exception($"{PetName} has overheated!")
+                    throw new CarIsDeadException("You have a lead foot.", DateTime.Now, $"{PetName} has overheated!")
                     {
                         HelpLink = "http://www.CarsRUs.com",
+                        /*
                         Data =
                         {
                             {
@@ -59,6 +60,7 @@ namespace SimpleException
                                 "Cause", "You have a lead foot."
                             }
                         }
+                        */
                     };
                     
                 }
